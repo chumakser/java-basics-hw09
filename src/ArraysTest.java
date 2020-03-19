@@ -1,5 +1,7 @@
 import static org.testng.Assert.assertEquals;
 
+
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -17,8 +19,14 @@ public class ArraysTest {
             new String[]{"Python", "JAVA", "PHP", "C#", "C++", "SQL"},
             new String[]{"MySQL", "SQL", "SQLite", "Oracle", "PostgreSQL", "DB2", "JAVA"},
             new String[]{"JAVA", "SQL"}
-        }
-        // TODO add 2 more test data here
+        },
+            {new String[]{"One", "two", "three", "four", "zzz"},
+                    new String[]{"zzz", "kolo", "bok"},
+                    new String[]{"zzz"}},
+            {new String[]{"This", "is", "simple", "text"},
+                    new String[]{"This", "is", "not", "simple", "Text"},
+                    new String[]{"This", "is", "simple"}}
+
     };
   }
 
